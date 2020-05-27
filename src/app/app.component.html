@@ -8,15 +8,14 @@
 <body>
   <section id="ProcessesDetails">
       <div class="container-fluid">
-        <div class="container">
           <div class="row m-0">
             <div class="col-md-1">
-              <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+              <button class="sidebar-button" mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
                 <mat-icon>menu</mat-icon>
               </button>
             </div>
             <div class="col-md-6">
-             <div class="inner-use d-flex">
+             <div class="inner-use d-flex pt-2 pb-2">
               <a><img src="../assets/logo/logo-main.jpg"></a>
               <div class="dropdown header-select">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,7 +42,7 @@
               </ul>
             </div>
           </div>
-        </div>
+      
       </div>
       <div class="process-section">
         <div class="container-fluid">
@@ -139,57 +138,109 @@
 <div class="row m-0">
   <div class="col-md-6 border">
     <h2>Assesment Result</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <td ><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Feasilty Score</td>
-          <td >94</td>
-          <td ><i class="fa fa-usd" aria-hidden="true"></i> Saving</td>
-          <td >$000000</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td ><i class="fa fa-recycle" aria-hidden="true"></i> Ease of implemation</td>
-          <td>78</td>
-          <td><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Error Reduction</td>
-          <td>Low</td>
-        </tr>
-        <tr>
-          <td ><i class="fa fa-line-chart" aria-hidden="true"></i> Throughout Increse</td>
-          <td>250 Txs</td>
-        </tr>
-      </tbody>
-    </table>
+      <div class="row">
+
+      <div class="col-md-6">
+      
+        <div class="assusment-result-data d-flex">
+          <div class="left-data">
+         <i class="fa fa-puzzle-piece" aria-hidden="true"></i> Feasilty Score
+        </div>
+        <div class="right-data">
+          94
+        </div>
+        </div>
+          <div class="assusment-result-data d-flex">
+            <div class="left-data">
+              <i class="fa fa-recycle" aria-hidden="true"></i> Ease of implemation
+          </div>
+          <div class="right-data">
+            78
+          </div>
+          </div>
+          <div class="assusment-result-data d-flex">
+            <div class="left-data">
+              <i class="fa fa-line-chart" aria-hidden="true"></i> Throughout Increse
+          </div>
+          <div class="right-data">
+            250 Txs
+          </div>
+          </div>
+    </div>
+    <div class="col-md-6">
+     
+      <div class="assusment-result-data d-flex">
+        <div class="left-data">
+          <i class="fa fa-usd" aria-hidden="true"></i> Saving
+      </div>
+      <div class="right-data">
+      $00000
+      </div>
+      </div>
+      <div class="assusment-result-data d-flex">
+        <div class="left-data">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Error Reductio
+      </div>
+      <div class="right-data">
+      Low
+      </div>
+      </div>
+    </div>
+    </div>
   </div>
   <div class="col-md-6">
     <h2>Real-time Diagonstics</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <td > Feasilty Score</td>
-          <td >94</td>
-          <td > Saving</td>
-          <td >$000000</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td >Ease of implemation</td>
-          <td>78</td>
-          <td> Error Reduction</td>
-          <td>Low</td>
-        </tr>
-        <tr>
-          <td > Throughout Increse</td>
-          <td>250 Txs</td>
-        </tr>
-      </tbody>
-    </table>
+   <div class="row m-0">
+     <div class="col-md-6">
+      <div class="assusment-result-data d-flex">
+        <div class="left-data">
+      Feasilty Score
+      </div>
+      <div class="right-data">
+        94
+      </div>
+      </div>
+        <div class="assusment-result-data d-flex">
+          <div class="left-data">
+            Ease of implemation
+        </div>
+        <div class="right-data">
+          78
+        </div>
+        </div>
+        <div class="assusment-result-data d-flex">
+          <div class="left-data">
+            Throughout Increse
+        </div>
+        <div class="right-data">
+          250 Txs
+        </div>
+        </div>
+     </div>
+     <div class="col-md-6">
+      <div class="assusment-result-data d-flex">
+        <div class="left-data">
+         Saving
+      </div>
+      <div class="right-data">
+      $00000
+      </div>
+      </div>
+      <div class="assusment-result-data d-flex">
+        <div class="left-data">
+         Error Reductio
+      </div>
+      <div class="right-data">
+      Low
+      </div>
+      </div>
+     </div>
+   </div>
   </div>
 
 </div>
 </div>
+<hr>
 </div>   
 <div class="seconed-section mt-3">
   <h2>Process Detail</h2>
@@ -429,7 +480,9 @@
 </ul>
 </div>
 <div class="col-md-12">
-  <span><small>Comments:</small>Dummy data,Dummy data,Dummy data,Dummy data</span>
+  <p class="comments">
+    <span>   comments:</span>
+          Dummy data,Dummy data,Dummy data,Dummy data</p>
 </div>
 </div>
         </div>
@@ -448,7 +501,10 @@
 </ul>
 </div>
 <div class="col-md-12">
-  <span><small>Comments:</small>Dummy data,Dummy data,Dummy data,Dummy data</span>
+  <p class="comments">
+    <p class="comments">
+      <span>   comments:</span>
+            Dummy data,Dummy data,Dummy data,Dummy data</p>
 </div>
 </div>
         </div>
@@ -467,7 +523,9 @@
 </ul>
 </div>
 <div class="col-md-12">
-  <span><small>Comments:</small>Dummy data,Dummy data,Dummy data,Dummy data</span>
+  <p class="comments">
+ <span>   comments:</span>
+       Dummy data,Dummy data,Dummy data,Dummy data</p>
 </div>
 </div>
         </div>
@@ -579,7 +637,7 @@
           <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
         </div>
       </div>
-      <button type="button" class="btn btn-primary">Post</button>
+      <button type="button" class="btn btn-primary input-button">Post</button>
             </div>
             <div class="comments-show-div d-flex">
               <div class="name">
@@ -597,6 +655,7 @@
 
       </div>  
   </section>
+
 </body>
 </html>
 
